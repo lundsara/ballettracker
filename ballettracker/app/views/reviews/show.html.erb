@@ -1,0 +1,10 @@
+<p class="review"><%= notice %></p>
+
+<p>
+  <strong>Review:</strong>
+  <%= @review.description %>
+</p>
+
+<%= link_to 'Delete', @review, method: :delete, data: { confirm: 'Are you sure?' } %>|
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

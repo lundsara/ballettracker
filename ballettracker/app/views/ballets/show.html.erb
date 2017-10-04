@@ -1,0 +1,25 @@
+<p class="review"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @ballet.name %>
+</p>
+
+<p>
+  <strong>Composer:</strong>
+  <%= @ballet.composer %>
+</p>
+
+<p>
+  <strong>Choreographer:</strong>
+  <%= @ballet.choreographer %>
+</p>
+
+<p>
+  <strong>Ballerina:</strong>
+  <%= @ballet.ballerina %>
+</p>
+
+<%= link_to 'Show Review', review_path %>|
+<%= link_to 'Edit', edit_ballet_path(@ballet) %> |
+<%= link_to 'Back', ballets_path %>

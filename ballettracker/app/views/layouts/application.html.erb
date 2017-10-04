@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ballettracker</title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag 'application',"https://fonts.googleapis.com/css?family=Noto+Serif|Roboto" , media: 'all', 'data-turbolinks-track' => true %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <header>
+  <h1>BalletReview</h1>
+<h3> The best place to log what you've seen and what you've thought! </h3>
+  </header>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

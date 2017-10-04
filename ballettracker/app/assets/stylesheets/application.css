@@ -1,0 +1,165 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+  display: block;
+  height: infinite;
+  overflow-y: auto;
+  z-index: 500;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 200px;
+  min-height: 1200px;
+ }
+
+ header {
+  font-family: 'Noto Serif', serif;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  height: 90px;
+  margin: auto;
+  padding: 2% 3%;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(21,30,53,.15);
+  background-position: right top;
+  z-index: 500;
+
+}
+
+img {
+  border: solid lavender 10px;
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+table {
+  max-width: 1000px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+  min-height: 500px;
+  background-color: white;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: 'Noto Serif', serif;
+}
+td {
+ font-family: 'Noto Serif', serif;
+ font-size: 18px;
+ line-height: 30px;
+ text-align: center;
+ margin: 0 auto;
+
+}
+th {
+
+ font-family: 'Noto Serif', serif;
+ font-size: 25px;
+ padding: 20px;
+}
+p {
+ font-family: 'Noto Serif', serif;
+ font-size: 20px;
+ line-height: 45px;
+ width: 920px;
+ margin: 0 auto;
+ text-align: center;
+}
+
+.reviews {
+ display: flex;
+ position: absolute;
+}
+
+input {
+
+  width: 200px;
+  height: 40px;
+  font-family: 'Noto Serif', serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+button {
+background-color: lavender;
+}
+
+#edit{
+text-align: center;
+margin: 0 auto;
+ }
+
+a {
+margin-bottom: 100px;
+}
+
+.links {
+border: none;
+text-align: center;
+margin: 0 auto;
+
+}
+.text{
+border: solid lavender 10px;
+width: 100%;
+text-align: center;
+margin: 0 auto;
+
+}
+
+#show{
+width: 1000px;
+text-align: center;
+margin: 0 auto;
+}
+#edit{
+width: 1000px;
+text-align: center;
+margin: 0 auto;
+
+}
+#delete{
+width: 1000px;
+text-align: center;
+margin: 0 auto;
+}
+#review_description{
+  width: 1000px;
+  height: 200px;
+  border: solid lavender 10px;
+}
+
+#list{
+ border: solid lavender 10px;
+}
+
+
+

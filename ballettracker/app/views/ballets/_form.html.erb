@@ -1,0 +1,40 @@
+<div class='review'>
+<%= form_with(model: ballet, local: true) do |form| %>
+  <% if ballet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ballet.errors.count, "error") %> prohibited this ballet from being saved:</h2>
+
+      <ul>
+      <% ballet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :ballet_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :composer %>
+    <%= form.text_field :composer, id: :ballet_composer %>
+  </div>
+
+
+  <div class="field">
+    <%= form.label :choreographer %>
+    <%= form.text_field :choreographer, id: :ballet_choreographer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ballerina %>
+    <%= form.text_field :ballerina, id: :ballet_ballerina %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
+</div>

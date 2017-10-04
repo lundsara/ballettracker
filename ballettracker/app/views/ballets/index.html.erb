@@ -1,0 +1,33 @@
+<p class="reviews"><%= notice %></p>
+
+
+<img src='http://www.ernst-haas.com/archive/ballet/ballet17.jpg'>
+<table id="list">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Composer</th>
+      <th>Choreographer</th>
+      <th>Ballerina</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ballets.each do |ballet| %>
+      <tr>
+        <td><%= ballet.name %></td>
+        <td><%= ballet.composer %></td>
+        <td><%= ballet.choreographer %></td>
+        <td><%= ballet.ballerina %></td>
+        <td><%= link_to 'Show', ballet %></td>
+        <td><%= link_to 'Edit', edit_ballet_path(ballet) %></td>
+        <td><%= link_to 'Destroy', ballet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ballet', new_ballet_path %>
